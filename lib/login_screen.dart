@@ -24,11 +24,33 @@ class LoginScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
-        child: ElevatedButton.icon(
-          icon: Icon(Icons.login),
-          label: Text("Login with Google"),
-          onPressed: () => handleLogin(context),
+      backgroundColor: Colors.grey[200],
+      body: Padding(
+        padding: const EdgeInsets.all(32.0),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text("Welcome to App", style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold)),
+            SizedBox(height: 40),
+            Text("Login with", style: TextStyle(fontSize: 16, color: Colors.blue[800])),
+            SizedBox(height: 10),
+            ElevatedButton(
+              onPressed: () => handleLogin(context),
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.blue[800],
+                minimumSize: Size(double.infinity, 48),
+              ),
+              child: Text("Google", style: TextStyle(color: Colors.white)),
+            ),
+            SizedBox(height: 20),
+            GestureDetector(
+              onTap: () {
+                // optional: privacy policy action
+              },
+              child: Text("Privacy", style: TextStyle(color: Colors.blue[800])),
+            ),
+          ],
         ),
       ),
     );

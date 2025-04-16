@@ -39,21 +39,28 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text("Selamat Datang"),
-        actions: [
-          IconButton(
-            icon: Icon(Icons.logout),
-            onPressed: () => logout(context),
-          )
-        ],
-      ),
-      body: Center(
+      body: Padding(
+        padding: const EdgeInsets.all(32.0),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text("Nama: $name"),
-            Text("Email: $email"),
+            Text("Anda login sebagai", style: TextStyle(fontSize: 16)),
+            SizedBox(height: 20),
+            Text(name, style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold)),
+            SizedBox(height: 8),
+            Text(email, style: TextStyle(fontSize: 18)),
+            SizedBox(height: 40),
+            Center(
+              child: ElevatedButton(
+                onPressed: () => logout(context),
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.brown[400],
+                  minimumSize: Size(double.infinity, 48),
+                ),
+                child: Text("Logout", style: TextStyle(color: Colors.white)),
+              ),
+            ),
           ],
         ),
       ),
