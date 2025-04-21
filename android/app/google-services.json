@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "206436788493",
+    "project_id": "tugas5-lwg",
+    "storage_bucket": "tugas5-lwg.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:206436788493:android:f84330b1bf2f28f14ee844",
+        "android_client_info": {
+          "package_name": "com.example.tugas5pb"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "206436788493-1561adf37mn1ui98bn63hjrnslpcfu1l.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.tugas5pb",
+            "certificate_hash": "87b652cd056994492dbf71e925ffa99cfd2b69a2"
+          }
+        },
+        {
+          "client_id": "206436788493-l1itjp7ll0c1pob1l17k3oe21llv5vlb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA9PfAKVa6ENKnJL1lxIX6LucYNLfpGOT0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "206436788493-l1itjp7ll0c1pob1l17k3oe21llv5vlb.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "206436788493-16h0fpue9lq4kbqjfea2lq8ncbe696qu.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.tugas5pb"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
