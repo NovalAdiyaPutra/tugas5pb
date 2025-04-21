@@ -43,3 +43,36 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
+
+
+
+# VS Code (kalau kamu pakai VS Code)
+.vscode/
+
+# Firebase auto-generated file (kalau kamu pakai Firebase)
+firebase_options.dart
+
+# Android
+android/local.properties
+
+# iOS/macOS
+ios/Pods/
+ios/.symlinks/
+ios/Flutter/Flutter.framework
+ios/Flutter/Flutter.podspec
+ios/Runner.xcworkspace
+
+macos/Pods/
+macos/.symlinks/
+macos/Flutter/Flutter.framework
+macos/Flutter/Flutter.podspec
+macos/Runner.xcworkspace
+
+# Windows/Linux
+windows/flutter/
+linux/flutter/
+
+# Coverage & logs
+coverage/
+*.tmp
+*.hprof
