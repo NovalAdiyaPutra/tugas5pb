@@ -1,0 +1,10 @@
+# Utamakan Dart dalam statistik bahasa
+*.dart linguist-detectable=true
+
+# Abaikan folder native dari analisis bahasa GitHub
+/android/** linguist-vendored
+/ios/** linguist-vendored
+/macos/** linguist-vendored
+/linux/** linguist-vendored
+/windows/** linguist-vendored
+/web/** linguist-vendored
